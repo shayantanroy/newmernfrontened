@@ -1,0 +1,37 @@
+@import "colour";
+
+
+
+.menu{
+    // background-color:$red;
+    width: 100%;
+  min-height: 90vh;
+  background-color: white;
+  padding: 2rem 4rem;
+  background-image: url("../assets/b.tech\ food\ wala\ pics/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+
+  > h1 {
+    font-size: 2rem;
+    text-align:center;
+    padding: 1.5rem;
+    color: $red;
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+    .menu{
+        >div{
+            flex-direction: column;
+        }
+    }
+    
+}

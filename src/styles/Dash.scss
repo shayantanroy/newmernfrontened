@@ -1,0 +1,103 @@
+@import "colour";
+.dashboard{
+    // background-color: $pink;
+    width:100%;
+    height:100%;
+    >main{
+        height: 100%;
+        background-color: rgb(246, 231, 204);
+        width:70%;
+        margin: auto;
+
+
+        .visual-item{
+            background-color: $dark;
+            padding:2rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            > div {
+                background-color: white;
+                border-radius: 100%;
+                text-align: center;
+                height: 120px;
+                width: 120px;
+                padding: 2rem 0;
+                
+               
+              }
+            }
+            >section{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 6rem;
+                
+                >div{
+                    display: flex;
+                    flex-direction: column;
+                    width:49.5%;
+                    justify-content: center;
+                    align-items: center;
+                    // background-color: rebeccapurple;
+                    >a{
+                        white-space: nowrap;
+          background-color: $dark;
+          color: white;
+          padding: 1rem;
+          width: 50%;
+          text-align: center;
+          border-radius: 5px;
+          margin: 1rem;
+          &:hover {
+            background-color: $reddark;
+          }
+   } 
+ }
+ >article{
+                    width:49.5%;
+                    // background-color: red;
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 820px) {
+        .dashboard {
+          height: 100vmin;
+          > main > section {
+            padding: 2rem;
+          }
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .dashboard {
+        //   height: unset;
+        height: 100%;
+        //   min-height: 100vh;
+          > main {
+          
+            .visual-item {
+              
+              > div {
+                height:50%;
+                background-color: wheat;
+                margin: 0.5rem;
+              }
+            }
+      
+            > section {
+              flex-direction: column;
+              padding: 2rem;
+              > div {
+                width: 100%;
+                margin: 1rem 0;
+              }
+              > article {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }

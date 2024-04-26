@@ -1,0 +1,69 @@
+@import "colour";
+.home{
+height: 100vh;
+background-size:cover;
+background-position: center;
+background-image: url("../assets/b.tech\ food\ wala\ pics/traditional-supreme-pizza-black-stone.jpg");
+z-index: -1;
+width: 100%;
+
+
+div{
+  padding-left: 8rem;
+  padding-top: 15rem;
+  z-index: 1;
+  margin-bottom: 1.5rem;
+
+
+  >h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: cursive;
+    color:white;
+  }
+  >p{
+    font-size: 1.2rem;
+    color: white;
+
+  }
+
+}
+a{
+  margin-left: 8rem;
+
+  button{
+    padding:0.8rem 0.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: $red;
+    width:10rem;
+    color: aliceblue;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    &:hover {
+      background-color: $reddark;
+    }
+  }
+}
+
+}
+
+@media screen and (max-width:600px) {
+  .home{
+    height:60vh;
+  
+    >div{
+      padding-top: 10rem;
+      padding-left: 0rem;
+        text-align: center;
+    }
+    a{
+      margin: 0;
+    display: flex;
+    justify-content: center;
+    }
+
+  }
+  
+}

@@ -1,0 +1,65 @@
+@import "colour";
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.229);
+ position: sticky;
+ background-color: rgb(252, 232, 196);
+ top: 0;
+ left: 0;
+// position: fixed;
+width: 100%;
+z-index: 999;
+opacity:0.90;
+
+div{
+    display: flex;
+    align-items: center;
+}
+svg {
+    color: $red;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  a{
+    margin: 0 2rem;
+    color: $dark;
+    transition: dark 0.3s;
+  
+
+    // for button
+    // border: none;
+
+    &:hover {
+      color: $lightdark;
+    }
+    svg {
+        color: $red;
+        transition: inherit;
+        font-size: 1.5rem;
+        &:hover {
+          color: $lightdark;
+        }
+      }
+}
+
+}
+@media screen and (max-width:600px) {
+   nav{
+    padding:1rem;
+
+
+   div {
+    margin: 0 0.5rem;
+   }
+   a{
+    margin: 0 0.5rem;
+   }
+} 
+}
+

@@ -1,0 +1,92 @@
+@import "colour";
+
+.cart{
+    width: 100%;
+    height:90vh;
+    // background-color: $pink;
+    background-image: url("../assets/b.tech\ food\ wala\ pics/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+  
+    
+    >main{
+        padding-top: 1rem;
+        width:70%;
+        margin: auto;
+        background-color: wheat;
+        height: 90vh;
+        >div{
+
+            display: flex;
+            justify-content:end;
+            margin-right: 5rem;
+            margin-bottom: 1rem;
+            margin-top: 4px;
+        >button{
+            border-radius: 5px;
+            padding: 0.3rem 0.4rem;
+            border: none;
+            background-color: $reddark;
+            color: white;
+            cursor: pointer;
+            &:hover{
+               background-color: rgb(160, 14, 89);
+            }
+        }
+ 
+        }
+        
+
+        .price{
+            // background-color: red;
+        
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            margin: auto;
+            padding: 1rem 2rem;
+           
+           >div{
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // padding:0 2rem;
+            // background-color: red;
+            // margin: auto;
+            line-height: 2rem;
+            // >h4{
+            //     font-family: cursive;
+            // }
+           }
+           >a{
+            color: white;
+            background-color:$reddark;
+            padding:0.3rem 0.4rem;
+            border-radius:5px;
+            margin-top: 10px;
+          
+            
+           }
+
+
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .cart{
+        >main>div{
+            justify-content: center;
+            margin-right: 0;
+
+        }
+        >main{
+            width: 85%;
+        }
+    }
+    
+}
+
+
