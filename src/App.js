@@ -45,19 +45,19 @@ import "./styles/Dash.scss"
 import "./styles/loder.scss"
 import Dash from "./components/Dashboard/Dash";
 import Adminorders from "./components/Dashboard/Adminorders";
-import { getAdminStats } from "./redux/actions/Adminaction";
+
 // import Myownprofile from "./components/layout/Myownprofile";
 
 
 function App() {
   const dispatch=useDispatch();
   const{error,isAuthenticated,message,loading,user}=useSelector((state)=>state.auth)
-  const{isAuthorised}=useSelector((state)=>state.admin)
+ 
 
 
   useEffect(()=>{
     dispatch(loadUser());
-    dispatch(getAdminStats());
+    
     if(message){
       toast.success(message);
       dispatch(resetmessage());
@@ -96,12 +96,12 @@ function App() {
       <ProtectedRoute isAuthenticated={isAuthenticated} redirect="/"><Myprofile/></ProtectedRoute>}/>
       {/* {isAuthenticated&&
       <Route path="/myprofile" element={<Myprofile/>}/>} */}
-      {isAuthorised&&
-   <Route path="/dashboard" element={<Dash/>}/>}
-   {isAuthorised&&
-   <Route path="/admin/users" element={<Adminusers/>}/>}
-   {isAuthorised&&
-   <Route path="/admin/orders" element={<Adminorders/>}/>}
+      
+   <Route path="/dashboard" element={<Dash/>}/>
+   
+   <Route path="/admin/users" element={<Adminusers/>}/>
+  
+   <Route path="/admin/orders" element={<Adminorders/>}/>
     
    {/* <Route path="/ownprofile" element={<Myownprofile/>}/> */}
 
