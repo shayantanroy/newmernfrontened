@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import{useDispatch,useSelector} from "react-redux";
-import { getAdminUsers } from '../../redux/actions/Adminaction';
+import { getAdminOrders, getAdminUsers } from '../../redux/actions/Adminaction';
 
 import Loder from"../layout/Loader"
 const Adminusers = () => {
@@ -30,6 +30,7 @@ const Adminusers = () => {
                     <th>Role</th>
                     <th>Login</th>
                     </tr>
+
 
                 </thead>
                 <tbody>
