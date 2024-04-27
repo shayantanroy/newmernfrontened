@@ -38,7 +38,7 @@ const orderhandler=()=>{
 }
 
 const submitgo=()=>{
-  navigate("/dashboard")
+  navigate("/admin/dashboard")
 }
 
 useEffect(()=>{
