@@ -97,7 +97,7 @@ function App() {
       {/* {isAuthenticated&&
       <Route path="/myprofile" element={<Myprofile/>}/>} */}
       
-   <Route path="/admin/dashboard" element={<Dash/>}/>
+   <Route path="dashboard" element={<Dash/>}/>
    
    <Route path="/admin/users" element={<Adminusers/>}/>
   
