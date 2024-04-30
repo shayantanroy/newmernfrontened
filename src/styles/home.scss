@@ -12,8 +12,7 @@ div{
   padding-left: 8rem;
   padding-top: 15rem;
   z-index: 1;
-  margin-bottom: 1.5rem;
-
+margin-bottom: 1.5rem;
 
   >h1{
     font-size: 4rem;
@@ -51,7 +50,11 @@ a{
 
 @media screen and (max-width:600px) {
   .home{
-    height:60vh;
+    height:100%;
+   
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
   
     >div{
       padding-top: 10rem;
@@ -62,7 +65,11 @@ a{
       margin: 0;
     display: flex;
     justify-content: center;
+    >button{
+      margin-bottom:2.5rem;
     }
+    }
+   
 
   }
   

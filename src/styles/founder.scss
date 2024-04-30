@@ -42,6 +42,11 @@
 }
 @media  screen  and (max-width:600px){
   .founder{
-  height:60vh;
+  height:70vh;
+  div>img{
+    width:150px;
+    height: 150px;
+  border-radius: 100%;
+  }
   }
 }

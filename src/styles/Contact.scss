@@ -74,3 +74,48 @@
 
    }
 }
+
+@media screen and (max-width:600px) {
+    .Contact{
+     
+    
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+    
+
+    .part1{
+        background-color: wheat;
+        width:90%;
+        padding:2rem 2rem;
+        border-radius:1rem;
+ 
+     
+        >div{
+      
+        >input,textarea{
+            width:100%;
+            padding: 0.7rem;
+            border: 1px solid $red;
+            color: $red;
+            margin:1rem 0; 
+           
+    
+    
+        }
+      
+        }
+       }
+       .part2{
+        width:0;
+        background-color:wheat;
+        height:70vh;
+        
+    
+       }
+
+
+    }
+
+
+}

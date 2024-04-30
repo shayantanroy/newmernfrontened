@@ -6,7 +6,6 @@
     // background-color:$red;
     width: 100%;
   min-height: 90vh;
-  background-color: white;
   padding: 2rem 4rem;
   background-image: url("../assets/b.tech\ food\ wala\ pics/bg.png");
   background-size: cover;
@@ -17,10 +16,11 @@
     font-size: 2rem;
     text-align:center;
     padding: 1.5rem;
-    color: $red;
+    color: wheat;
   }
 
   > div {
+   
     display: flex;
     justify-content: space-evenly;
   }
@@ -29,6 +29,7 @@
 
 @media screen and (max-width:600px) {
     .menu{
+      padding: 1rem 1.5rem;
         >div{
             flex-direction: column;
         }
